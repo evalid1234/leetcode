@@ -3,7 +3,14 @@ package org.resume.trees;
 public class MergeTrees {
 
     public MergeTrees(TreeNode root1, TreeNode root2) {
-        System.out.println("Merged tree:\n" + mergeTrees(root1,root2));
+        TreeNode root = mergeTrees(root1,root2);
+        System.out.println("Merged tree:\n");
+        try {
+            TreeNode.showTree(root);
+
+        } catch (Exception e) {
+            System.out.println("Err, please implment your own error handling");
+        }
     }
 
     private TreeNode mergeTrees(TreeNode root1, TreeNode root2) {

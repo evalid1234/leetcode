@@ -41,6 +41,13 @@ public class TreeNode {
     public void setRight(TreeNode right) {
         this.right = right;
     }
+    public static void showTree(TreeNode root) {
+        if (root == null) return;
+
+        showTree(root.getLeft());
+        System.out.println(root.val);
+        showTree(root.getRight());
+    }
 
     @Override
     public String toString() {

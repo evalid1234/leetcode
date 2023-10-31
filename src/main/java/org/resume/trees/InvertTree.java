@@ -3,7 +3,14 @@ package org.resume.trees;
 public class InvertTree {
     public InvertTree(TreeNode root) {
 
-        System.out.println("Inverted tree:\n" + invertTree(root));
+        System.out.println("Inverted tree:\n" );
+        try {
+
+            TreeNode.showTree(invertTree(root));
+
+        } catch (Exception e) {
+            System.out.println("Err, please implment your own error handling");
+        }
 
     }
 

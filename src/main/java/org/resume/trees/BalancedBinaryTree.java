@@ -8,6 +8,7 @@ import java.util.HashSet;
 public class BalancedBinaryTree {
     public BalancedBinaryTree(TreeNode root) {
         System.out.println("Is balanced= " + isBalanced(root));
+
     }
 
     /*
