@@ -6,29 +6,33 @@ import java.util.HashSet;
 //given a binary tree determine if its height is balanced.
 //a tree is balanced if the left and right subtrees of every node differ in height by no more than 1;.
 public class BalancedBinaryTree {
-    /*
-    * another solution:
-    * public int getHeight(TreeNode node) {
-        if (node == null) return 0;
-
-        int left = getHeight(node.left);
-        int right = getHeight(node.right);
-
-        if (left ==-1 || right == -1) {
-            return -1;
-        }
-        if (Math.abs(left - right) > 1) {
-            return -1;
-        }
-        return Math.max(left, right) +1;
+    public BalancedBinaryTree(TreeNode root) {
+        System.out.println("Is balanced= " + isBalanced(root));
     }
-      public boolean isBalanced (TreeNode root) {
-        int res = getHeight(root);
-        if (res == -1 ) return false;
-        return true;
 
-      }}
-      * */
+    /*
+        * another solution:
+        * public int getHeight(TreeNode node) {
+            if (node == null) return 0;
+
+            int left = getHeight(node.left);
+            int right = getHeight(node.right);
+
+            if (left ==-1 || right == -1) {
+                return -1;
+            }
+            if (Math.abs(left - right) > 1) {
+                return -1;
+            }
+            return Math.max(left, right) +1;
+        }
+          public boolean isBalanced (TreeNode root) {
+            int res = getHeight(root);
+            if (res == -1 ) return false;
+            return true;
+
+          }}
+          * */
     private class ResultPair {
         private boolean isBalanced;
         private int height;
