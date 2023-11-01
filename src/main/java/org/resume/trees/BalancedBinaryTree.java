@@ -34,7 +34,7 @@ public class BalancedBinaryTree {
 
           }}
           * */
-    private class ResultPair {
+    private static class ResultPair {
         private boolean isBalanced;
         private int height;
         public ResultPair(){
